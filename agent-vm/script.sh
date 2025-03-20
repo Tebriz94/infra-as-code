@@ -5,7 +5,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt-get update
 sudo apt-get install -y docker-ce
-sudo usermod -aG docker shubham
+sudo usermod -aG docker agent
 sudo systemctl enable docker
 sudo systemctl start docker
 sudo chmod 666 /var/run/docker.sock
